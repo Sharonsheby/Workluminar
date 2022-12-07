@@ -27,6 +27,37 @@
     /* body{
         height: 1000%;
     } */
+    form{
+        display: block;
+    }
+    .no-border{
+        border: 0;
+        
+    }
+    .btn1-primary{
+        width: 100px;
+        height: 35px;
+        text-align: center;
+        background-color: blueviolet;
+        margin: 20px;
+        border: 0px;
+        color: white;
+    }
+     .btn-primary{
+        width: 100px;
+        height: 35px;
+        text-align: center;
+        background-color: blueviolet;
+        margin: 20px;
+        border: none;
+    }
+    .button-default{
+      width: 100px;
+      height: 35px;
+      color: white;
+      background-color: blueviolet;
+
+    }
 
 </style>
 <body>
@@ -104,5 +135,64 @@
         </button>
        
       </div>
+
+       <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  click here
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    
+    <div class="modal-content">
+      <div class="container mt-5">
+      <!-- <div class="modal-header"></div>  -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      
+      <div class="modal-body" style="background-color: white;">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Get Training Quote For Free</h1>
+          <form>
+              <input type="text" class="form-control no-border" id="inputname" placeholder="Name">
+              <hr>
+              <input type="text" class="form-control no-border" id="inputname"placeholder="Email">
+              <hr>
+              <input type="text" class="form-control no-border" id="inputname"placeholder="Phone Number">
+              <hr>
+
+              <!-- <li class="nav-item dropdown"> -->
+                
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Select course interested in
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Data Science-ML-AL-Big Data with Cloud & Tableau</a></li>
+                  <li><a class="dropdown-item" href="#">Python Django-Angular-Full Stack Web Development Expert</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">Software Tesing Specialist</a></li>
+                  <li><a class="dropdown-item" href="#">MEARN Stack Web Development Expert-Angular & React</a></li>
+                  <li><a class="dropdown-item" href="#">Business Analytics-Power BI & Tableau</a></li>
+                  <li><a class="dropdown-item" href="#">Android Developer Expert Training in Kochi-Flutter</a></li>
+                  <li><a class="dropdown-item" href="#">PYTHON-DATA SCIENCE with ML-AL-& TABLEAU</a></li>
+                </ul>
+              <!-- </li> -->
+              <hr>
+              <input type="text" class="form-control no-border" id="inputcity"placeholder="City">
+              <hr>
+              <input type="text" class="form-control no-border" id="inputcomments"placeholder="Comments"><br><br><br>
+
+
+
+              <hr>
+          </form>
+      </div>
+      <!-- <div class="modal-footer"> -->
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn1-primary">submit</button>
+      <!-- </div> -->
+    </div>
+  </div>
+  </div>
+</div>
 </body>
 </html>
